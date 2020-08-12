@@ -1,7 +1,5 @@
 # bert_regression
 
-修改自：https://github.com/google-research/bert/pull/503/commits/f005e159ffb40591b7e16d257ab4abc4e137182a
-
 在bert基础上，有几点修改：
 
 1、extract_features.py中的read_examples函数读文件，改成自己的输入文件的格式，即“数值y\t文本x”的形式。
@@ -10,8 +8,10 @@
 
 3、run_reg_v2.3.1.py在run_reg.py的基础上，做了如下修改：
 
-    （1）去掉softmax：让y的范围从0~1变成0~无穷大。
+   （1）去掉softmax：让y的范围从0~1变成0~无穷大。
     
-    （2）再加两个relu和全连接：增加模型的拟合能力。
+   （2）再加两个relu和全连接：增加模型的拟合能力。
     
-    （3）用Xavier给w做初始化：更快、更好的效果。
+   （3）用Xavier给w做初始化：更快、更好的效果。
+    
+run_reg.py来自：https://github.com/google-research/bert/pull/503/commits/f005e159ffb40591b7e16d257ab4abc4e137182a
