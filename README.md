@@ -1,5 +1,7 @@
 # bert_regression
 
+修改自：https://github.com/google-research/bert/pull/503/commits/f005e159ffb40591b7e16d257ab4abc4e137182a
+
 在bert基础上，有几点修改：
 
 1、extract_features.py中的read_examples函数读文件，改成自己的输入文件的格式，即“数值y\t文本x”的形式。
