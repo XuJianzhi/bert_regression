@@ -1,5 +1,7 @@
 # bert_regression
 
+工作中遇到一个用文本做回归的问题，原版bert本来有run_reg.py，但不知为什么后来就又移除了，这个版本的y是从0到1，我的需求是从0到几十万，所以需要改改。
+
 在bert基础上，有几点修改：
 
 1、extract_features.py中的read_examples函数读文件，改成自己的输入文件的格式，即“数值y\t文本x”的形式。
