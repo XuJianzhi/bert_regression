@@ -19,7 +19,7 @@
 run_reg.py来自：https://github.com/google-research/bert/pull/503/commits/f005e159ffb40591b7e16d257ab4abc4e137182a
 
 运行和原版一样：
-'''
+```
 export PY_FILE_DIR=/usr/xujianzhi/formal_jobs/5_claim_cost_prediction/3_code/predict_compensation_amount_v1.1/albert_model/code_albert
 export PYTHON_PATH=/usr/xujianzhi/virtual_env/env_python3_experiment_1/bin/python
 
@@ -41,4 +41,4 @@ $PYTHON_PATH $PY_FILE_DIR/run_reg_v2.3.1.py \
   --learning_rate=2e-5 \
   --num_train_epochs=10.0 \
   --output_dir=$FINE_TUNED_MODEL_10_epoch > $PY_FILE_DIR/logs/$VERSION/10_epoch.log
-'''
+```
