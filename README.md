@@ -20,12 +20,12 @@ run_reg.py来自：https://github.com/google-research/bert/pull/503/commits/f005
 
 运行和原版一样：
 ```
-export PY_FILE_DIR=/usr/xujianzhi/formal_jobs/5_claim_cost_prediction/3_code/predict_compensation_amount_v1.1/albert_model/code_albert
-export PYTHON_PATH=/usr/xujianzhi/virtual_env/env_python3_experiment_1/bin/python
+export PY_FILE_DIR=/xxx/xxx/...
+export PYTHON_PATH=/xxx/.../bin/python
 
 export VERSION=v8.1.5_2
-export BERT_BASE_DIR=/usr/xujianzhi/pretrained_model/bert/chinese_L-12_H-768_A-12
-export FINE_TUNED_MODEL_10_epoch=$DATA_DIR_SOURCE/4_fine_tuned_model
+export BERT_BASE_DIR=/xxx/.../chinese_L-12_H-768_A-12
+export FINE_TUNED_MODEL_10_epoch=/xxx/.../fine_tuned_model_10_epoch
 
 $PYTHON_PATH $PY_FILE_DIR/run_reg_v2.3.1.py \
   --task_name=regression \
